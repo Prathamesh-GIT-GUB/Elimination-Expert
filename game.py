@@ -1,6 +1,4 @@
 from ursina import *
-import date as dt
-import time as t
 from playsound import playsound
 from direct.stdpy import thread
 
@@ -91,11 +89,5 @@ def input(key):
 def update():
     print(player.position)
 
-#Timer For The Game
-
-timer = Text(text='60', t=60)
-def update():
-    time.t -= time.dt
-    timer.text = str(round(timer.t, 2))
 
 app.run()
